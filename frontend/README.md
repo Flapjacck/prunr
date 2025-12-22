@@ -1,7 +1,7 @@
 # Prunr Frontend
 
 ```text
-Standard Frontend Structure
+Standard Frontend Structure for React Typescript
 
 /
 ├── node_modules/
