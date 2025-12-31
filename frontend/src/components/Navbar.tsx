@@ -6,6 +6,9 @@ const Navbar = () => {
     const handleLogin = () => {
         navigate("/auth");
     };
+    const handleWorkBench = () => {
+        navigate("/workbench");
+    };
     return (
         <nav
             style={{
@@ -44,6 +47,25 @@ const Navbar = () => {
             </div>
             <div style={{ flex: '1 1 auto' }} />
             <button
+                onClick={handleWorkBench}
+                style={{
+                    border: '1px solid #ccc',
+                    background: '#e6f7ff',
+                    borderRadius: '4px',
+                    cursor: 'pointer',
+                    fontSize: '1rem',
+                    padding: '6px 16px',
+                    minWidth: '110px',
+                    marginLeft: 'auto',
+                    marginRight: '12px',
+                    transition: 'background 0.2s',
+                    flex: '0 0 auto',
+                    maxWidth: '100%'
+                }}
+            >
+                WorkBench
+            </button>
+            <button
                 onClick={handleLogin}
                 style={{
                     border: '1px solid #ccc',
@@ -53,7 +75,6 @@ const Navbar = () => {
                     fontSize: '1rem',
                     padding: '6px 16px',
                     minWidth: '80px',
-                    marginLeft: 'auto',
                     transition: 'background 0.2s',
                     flex: '0 0 auto',
                     maxWidth: '100%'
